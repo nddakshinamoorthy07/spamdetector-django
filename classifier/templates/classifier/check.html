@@ -1,0 +1,17 @@
+{% extends 'classifier/base.html' %}
+{% block content %}
+<div class="card shadow p-4">
+  <h2 class="mb-3">Check Your Message</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <textarea name="message" class="form-control mb-3" rows="5" placeholder="Enter your message here..."></textarea>
+    <button type="submit" class="btn btn-primary">Check</button>
+  </form>
+
+  {% if result %}
+    <div class="alert alert-info mt-4">
+      <h4>Result: {{ result }}</h4>
+    </div>
+  {% endif %}
+</div>
+{% endblock %}
