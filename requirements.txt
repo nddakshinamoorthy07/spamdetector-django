@@ -6,10 +6,12 @@ colorama==0.4.6
 Django==4.2.23
 django-crispy-forms==2.4
 djangorestframework==3.16.0
+gunicorn==23.0.0
 idna==3.10
 joblib==1.5.1
 nltk==3.9.1
 numpy==2.3.2
+packaging==25.0
 pandas==2.3.2
 pillow==11.3.0
 python-dateutil==2.9.0.post0
